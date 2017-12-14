@@ -6,6 +6,7 @@ class Kele
    
    base_uri 'https://www.bloc.io/api/v1'
    
+   
    def initialize(email, password)
       response = self.class.post(api_url('sessions'), body: {email: email, password: password})
       @auth_token = response["auth_token"]
@@ -26,6 +27,11 @@ class Kele
          end
          available
       end
+   end
+   
+   def get_roadmap(roadmap_id)
+      response = self.class.get(api_url("roadmaps/#{roadmap_id}"), headers: { "authorization" => @auth_token })
+      @roadmap = JSON.parse(response.body)
    end
    
    private
