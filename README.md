@@ -1,4 +1,5 @@
-Kele
+<h3>Kele<h3>
+
 Kele is a Ruby Gem API client to access the Bloc API.
 
 Installation
