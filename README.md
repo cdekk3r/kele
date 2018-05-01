@@ -26,36 +26,36 @@ $ irb
 >> Kele.new("jane@gmail.com", "abc123")
 ```
 
-<h6>To retrieve a parsed ruby hash of your Bloc.io account information then run:</h6>
+<h5>To retrieve a parsed ruby hash of your Bloc.io account information then run:</h5>
 
-    `$ kele_client.get_me`
+    $ kele_client.get_me
 
-<h6>To retrieve your mentor's current availability:</h6>
+<h5>To retrieve your mentor's current availability:</h5>
 
-    `$ kele_client.get_mentor_availability(mentor_id)`
+    $ kele_client.get_mentor_availability(mentor_id)
 
-<h6>To retrieve your Bloc.io roadmap:</h6>
+<h5>To retrieve your Bloc.io roadmap:</h5>
 
-    `$ kele_client.get_roadmap(roadmap_id)`
+    $ kele_client.get_roadmap(roadmap_id)
 
-<h6>To retrieve information on a particular checkpoint:</h6>
+<h5>To retrieve information on a particular checkpoint:</h5>
 
-    `$ kele_client.get_checkpoint(checkpoint_id)`
+    $ kele_client.get_checkpoint(checkpoint_id)
 
-<h6>To retrieve your messages:</h6>
+<h5>To retrieve your messages:</h5>
 
-    `$ kele_client.get_messages(1) # returns the first page of message threads`
-    `$ kele_client.get_messages # returns all message threads`
+    $ kele_client.get_messages(1) # returns the first page of message threads
+    $ kele_client.get_messages # returns all message threads
 
-<h6>To send a message:</h6>
+<h5>To send a message:</h6>
 
-    `$ kele.client.create_message(sender_email, recipient_id, stripped_text, subject )`
+    $ kele.client.create_message(sender_email, recipient_id, stripped_text, subject )
 
-<h6>To submit a checkpoint:</h6>
+<h5>To submit a checkpoint:</h5>
 
-    `$ kele_client.create_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment)`
+    $ kele_client.create_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment)
 
-<h6>To update a checkpoint</h6>
+<h5>To update a checkpoint</h5>
 
-  `$ kele_client.update_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment)`
+    $ kele_client.update_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment)
 
